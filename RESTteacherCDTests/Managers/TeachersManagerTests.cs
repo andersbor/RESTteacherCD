@@ -12,7 +12,7 @@ namespace RESTteacherCD.Managers.Tests
         {
             TeachersManager manager = new TeachersManager();
             List<Teacher> all = manager.GetAll();
-            Assert.AreEqual(2, all.Count);
+            Assert.AreEqual(20, all.Count);
 
         }
     }
