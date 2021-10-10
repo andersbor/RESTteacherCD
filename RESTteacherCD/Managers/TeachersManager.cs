@@ -29,5 +29,13 @@ namespace RESTteacherCD.Managers
             Data.Add(teacher);
             return teacher;
         }
+
+        public Teacher Delete(int id)
+        {
+            Teacher teacher = Data.FirstOrDefault(teacher1 => teacher1.Id == id);
+            if (teacher == null) return null;
+            Data.Remove(teacher);
+            return teacher;
+        }
     }
 }

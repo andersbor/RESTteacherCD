@@ -42,8 +42,9 @@ namespace RESTteacherCD.Controllers
 
         // DELETE api/<TeachersController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public Teacher Delete(int id)
         {
+            return manager.Delete(id);
         }
     }
 }
